@@ -1,5 +1,8 @@
 package net.itzbionicz.cavesplainsupdate;
 
+import net.itzbionicz.cavesplainsupdate.block.ModBlocks;
+import net.itzbionicz.cavesplainsupdate.item.ModCreativeModeTabs;
+import net.itzbionicz.cavesplainsupdate.item.ModItems;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -28,10 +31,11 @@ public class CpuMod {
     public CpuMod(IEventBus modEventBus, ModContainer modContainer) {
 
         modEventBus.addListener(this::commonSetup);
-
-
-
         NeoForge.EVENT_BUS.register(this);
+        ModCreativeModeTabs.register(modEventBus);
+
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
