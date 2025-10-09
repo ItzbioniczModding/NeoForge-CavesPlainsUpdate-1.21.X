@@ -11,8 +11,8 @@
   "block.cpumod.hollow_fence_gate": "Hollowwood Fence Gate",
   "block.cpumod.hollow_door": "Hollowwood Door",
   "block.cpumod.hollow_trapdoor": "Hollowwood Trapdoor",
-  "item.examplemod.example_item": "Example Item"
+  "item.examplemod.example_item": "Example Item",
 
   "block.cpumod.stripped_hollow_log": "Stripped Hollowwood Log",
-  "block.cpumod.stripped_hollow_wood": "Stripped Hollowwood Wood",
+  "block.cpumod.stripped_hollow_wood": "Stripped Hollowwood Wood"
 }
