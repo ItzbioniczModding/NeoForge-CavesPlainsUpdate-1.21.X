@@ -19,6 +19,8 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
        dropSelf(ModBlocks.HOLLOW_PLANK.get());
        dropSelf(ModBlocks.HOLLOW_LOG.get());
        dropSelf(ModBlocks.HOLLOW_WOOD.get());
+       dropSelf(ModBlocks.STRIPPED_HOLLOW_LOG.get());
+       dropSelf(ModBlocks.STRIPPED_HOLLOW_WOOD.get());
        dropSelf(ModBlocks.HOLLOW_STAIRS.get());
         add(ModBlocks.HOLLOW_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.HOLLOW_SLAB.get()));
