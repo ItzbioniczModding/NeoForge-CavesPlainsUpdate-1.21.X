@@ -1,0 +1,17 @@
+{
+  "values": [
+    "cpumod:hollow_log",
+    "cpumod:hollow_wood",
+    "cpumod:stripped_hollow_log",
+    "cpumod:stripped_hollow_wood",
+    "cpumod:hollow_plank",
+    "cpumod:hollow_stairs",
+    "cpumod:hollow_slab",
+    "cpumod:hollow_pressure_plate",
+    "cpumod:hollow_button",
+    "cpumod:hollow_fence",
+    "cpumod:hollow_fence_gate",
+    "cpumod:hollow_door",
+    "cpumod:hollow_trapdoor"
+  ]
+}

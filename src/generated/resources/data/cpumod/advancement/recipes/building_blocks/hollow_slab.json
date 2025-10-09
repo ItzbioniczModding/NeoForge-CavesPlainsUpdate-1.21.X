@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hollow_plank": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cpumod:hollow_plank"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cpumod:hollow_slab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hollow_plank"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cpumod:hollow_slab"
+    ]
+  }
+}

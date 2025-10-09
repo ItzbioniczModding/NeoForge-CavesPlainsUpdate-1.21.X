@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "group": "hollow",
+  "key": {
+    "#": {
+      "item": "cpumod:hollow_plank"
+    }
+  },
+  "pattern": [
+    "#  ",
+    "## ",
+    "###"
+  ],
+  "result": {
+    "count": 4,
+    "id": "cpumod:hollow_stairs"
+  }
+}

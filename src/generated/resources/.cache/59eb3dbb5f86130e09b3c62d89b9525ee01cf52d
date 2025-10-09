@@ -1,0 +1,14 @@
+// 1.21	2025-10-09T16:49:33.669063	Loot Tables
+651157debe40c766bd97c8aebcd9f584b476c453 data/cpumod/loot_table/blocks/hollow_button.json
+21a041925fd0e3c4598800f29bc098758cafc322 data/cpumod/loot_table/blocks/hollow_door.json
+a5d24b3af7ca16361c48f35e0897587c780514b9 data/cpumod/loot_table/blocks/hollow_fence.json
+1d7fb215bd4a4d3521b4765ad7bc56d94d20198f data/cpumod/loot_table/blocks/hollow_fence_gate.json
+2d7961c441318d39dd2ca9e012fd341d90b929ed data/cpumod/loot_table/blocks/hollow_log.json
+497173bba96793cbe7bf4fbb97acddbc5f629791 data/cpumod/loot_table/blocks/hollow_plank.json
+3654dafbec5c55d383c7b30197b74513080881ac data/cpumod/loot_table/blocks/hollow_pressure_plate.json
+674b47d01aa988dea8c5805cc4118574cba8231d data/cpumod/loot_table/blocks/hollow_slab.json
+62c82d97ab598995dfa10c95ad17ed65edfe3fe1 data/cpumod/loot_table/blocks/hollow_stairs.json
+d5cf213960d9033956194f8729a94677cde526d3 data/cpumod/loot_table/blocks/hollow_trapdoor.json
+460de979a054294bd97a9f0fbffc7c15ee5b3430 data/cpumod/loot_table/blocks/hollow_wood.json
+70c7974fa8a277d54cc10058c477b618b3dc7c5c data/cpumod/loot_table/blocks/stripped_hollow_log.json
+f6ec48d6e0e371d23734f2b76ad2cf0b7b98090a data/cpumod/loot_table/blocks/stripped_hollow_wood.json

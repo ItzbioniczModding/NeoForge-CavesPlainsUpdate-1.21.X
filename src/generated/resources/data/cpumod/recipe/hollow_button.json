@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "hollow",
+  "ingredients": [
+    {
+      "item": "cpumod:hollow_plank"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "cpumod:hollow_button"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hollow_planks": {
+      "conditions": {
+        "items": [
+          {
+            "items": "cpumod:hollow_plank"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "cpumod:hollow_fence"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hollow_planks"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "cpumod:hollow_fence"
+    ]
+  }
+}

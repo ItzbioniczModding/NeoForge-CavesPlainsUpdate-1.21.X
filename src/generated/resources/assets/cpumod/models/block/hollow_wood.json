@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "cpumod:block/hollow_log",
+    "side": "cpumod:block/hollow_log"
+  }
+}
