@@ -1,5 +1,5 @@
 {
-  "creativetab.cpumod.cputab": "Caves and Plains Mod",
+  "creativetab.cpumod.cputab": "Caves and Plains Update",
   "block.cpumod.hollow_log": "Hollowwood Log",
   "block.cpumod.hollow_wood": "Hollowwood Wood",
   "block.cpumod.hollow_plank": "Hollowwood Planks",
@@ -12,4 +12,7 @@
   "block.cpumod.hollow_door": "Hollowwood Door",
   "block.cpumod.hollow_trapdoor": "Hollowwood Trapdoor",
   "item.examplemod.example_item": "Example Item"
+
+  "block.cpumod.stripped_hollow_log": "Stripped Hollowwood Log",
+  "block.cpumod.stripped_hollow_wood": "Stripped Hollowwood Wood",
 }
