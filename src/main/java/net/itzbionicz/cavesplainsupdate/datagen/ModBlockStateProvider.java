@@ -19,6 +19,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         blockItem(ModBlocks.HOLLOW_LOG);
         blockItem(ModBlocks.HOLLOW_WOOD);
+        blockItem(ModBlocks.STRIPPED_HOLLOW_LOG);
+        blockItem(ModBlocks.STRIPPED_HOLLOW_WOOD);
         blockWithitem(ModBlocks.HOLLOW_PLANK);
         stairsBlock(ModBlocks.HOLLOW_STAIRS.get(), blockTexture(ModBlocks.HOLLOW_PLANK.get()));
         slabBlock(ModBlocks.HOLLOW_SLAB.get(), blockTexture(ModBlocks.HOLLOW_PLANK.get()), blockTexture(ModBlocks.HOLLOW_PLANK.get()));
@@ -38,7 +40,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         logBlock(((RotatedPillarBlock)ModBlocks.HOLLOW_LOG.get()));
         axisBlock(((RotatedPillarBlock) ModBlocks.HOLLOW_WOOD.get()), blockTexture(ModBlocks.HOLLOW_LOG.get()), blockTexture(ModBlocks.HOLLOW_LOG.get()));
-
+        logBlock(((RotatedPillarBlock)ModBlocks.STRIPPED_HOLLOW_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.STRIPPED_HOLLOW_WOOD.get()), blockTexture(ModBlocks.STRIPPED_HOLLOW_LOG.get()), blockTexture(ModBlocks.STRIPPED_HOLLOW_LOG.get()));
     }
 
     private void blockWithitem(DeferredBlock<?> deferredBlock) {
