@@ -24,6 +24,8 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_AXE)
         .add(ModBlocks.HOLLOW_LOG.get())
         .add(ModBlocks.HOLLOW_WOOD.get())
+        .add(ModBlocks.STRIPPED_HOLLOW_LOG.get())
+        .add(ModBlocks.STRIPPED_HOLLOW_WOOD.get())
         .add(ModBlocks.HOLLOW_PLANK.get())
         .add(ModBlocks.HOLLOW_STAIRS.get())
         .add(ModBlocks.HOLLOW_SLAB.get())
