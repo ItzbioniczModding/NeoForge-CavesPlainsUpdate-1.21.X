@@ -1,6 +1,15 @@
 {
   "creativetab.cpumod.cputab": "Caves and Plains Mod",
   "block.cpumod.hollow_log": "Hollowwood Log",
+  "block.cpumod.hollow_wood": "Hollowwood Wood",
   "block.cpumod.hollow_plank": "Hollowwood Planks",
+  "block.cpumod.hollow_stairs": "Hollowwood Stairs",
+  "block.cpumod.hollow_slab": "Hollowwood Slab",
+  "block.cpumod.hollow_pressure_plate": "Hollowwood Pressure Plate",
+  "block.cpumod.hollow_button": "Hollowwood Button",
+  "block.cpumod.hollow_fence": "Hollowwood Fence",
+  "block.cpumod.hollow_fence_gate": "Hollowwood Fence Gate",
+  "block.cpumod.hollow_door": "Hollowwood Door",
+  "block.cpumod.hollow_trapdoor": "Hollowwood Trapdoor",
   "item.examplemod.example_item": "Example Item"
 }

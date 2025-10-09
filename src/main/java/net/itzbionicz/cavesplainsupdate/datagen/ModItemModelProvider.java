@@ -1,6 +1,7 @@
 package net.itzbionicz.cavesplainsupdate.datagen;
 
 import net.itzbionicz.cavesplainsupdate.CpuMod;
+import net.itzbionicz.cavesplainsupdate.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
@@ -17,7 +18,9 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         //basicItem(ModItems.FARVINITE_INGOT.get());
-
+        buttonItem(ModBlocks.HOLLOW_BUTTON, ModBlocks.HOLLOW_PLANK);
+        fenceItem(ModBlocks.HOLLOW_FENCE, ModBlocks.HOLLOW_PLANK);
+        basicItem(ModBlocks.HOLLOW_DOOR.asItem());
 
 
 

@@ -21,7 +21,16 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.cpumod.cputab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.HOLLOW_LOG);
+                        output.accept(ModBlocks.HOLLOW_WOOD);
                         output.accept(ModBlocks.HOLLOW_PLANK);
+                        output.accept(ModBlocks.HOLLOW_STAIRS);
+                        output.accept(ModBlocks.HOLLOW_SLAB);
+                        output.accept(ModBlocks.HOLLOW_PRESSURE_PLATE);
+                        output.accept(ModBlocks.HOLLOW_BUTTON);
+                        output.accept(ModBlocks.HOLLOW_FENCE);
+                        output.accept(ModBlocks.HOLLOW_FENCE_GATE);
+                        output.accept(ModBlocks.HOLLOW_DOOR);
+                        output.accept(ModBlocks.HOLLOW_TRAPDOOR);
 
 
 

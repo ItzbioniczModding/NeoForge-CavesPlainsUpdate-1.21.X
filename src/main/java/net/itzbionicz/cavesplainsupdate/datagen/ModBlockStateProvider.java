@@ -17,12 +17,27 @@ public class ModBlockStateProvider extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
 
-        blockWithitem(ModBlocks.HOLLOW_PLANK);
-
         blockItem(ModBlocks.HOLLOW_LOG);
-        logBlock(((RotatedPillarBlock) ModBlocks.HOLLOW_LOG.get()));
+        blockItem(ModBlocks.HOLLOW_WOOD);
+        blockWithitem(ModBlocks.HOLLOW_PLANK);
+        stairsBlock(ModBlocks.HOLLOW_STAIRS.get(), blockTexture(ModBlocks.HOLLOW_PLANK.get()));
+        slabBlock(ModBlocks.HOLLOW_SLAB.get(), blockTexture(ModBlocks.HOLLOW_PLANK.get()), blockTexture(ModBlocks.HOLLOW_PLANK.get()));
+        buttonBlock(ModBlocks.HOLLOW_BUTTON.get(), blockTexture(ModBlocks.HOLLOW_PLANK.get()));
+        pressurePlateBlock(ModBlocks.HOLLOW_PRESSURE_PLATE.get(), blockTexture(ModBlocks.HOLLOW_PLANK.get()));
+        fenceBlock(ModBlocks.HOLLOW_FENCE.get(), blockTexture(ModBlocks.HOLLOW_PLANK.get()));
+        fenceGateBlock(ModBlocks.HOLLOW_FENCE_GATE.get(), blockTexture(ModBlocks.HOLLOW_PLANK.get()));
 
+        doorBlockWithRenderType(ModBlocks.HOLLOW_DOOR.get(), modLoc("block/hollow_door_bottom"), modLoc("block/hollow_door_top"), "cutout");
+        trapdoorBlockWithRenderType(ModBlocks.HOLLOW_TRAPDOOR.get(), modLoc("block/hollow_trapdoor"), true,"cutout");
 
+        blockItem(ModBlocks.HOLLOW_STAIRS);
+        blockItem(ModBlocks.HOLLOW_SLAB);
+        blockItem(ModBlocks.HOLLOW_PRESSURE_PLATE);
+        blockItem(ModBlocks.HOLLOW_FENCE_GATE);
+        blockItem(ModBlocks.HOLLOW_TRAPDOOR, "_bottom");
+
+        logBlock(((RotatedPillarBlock)ModBlocks.HOLLOW_LOG.get()));
+        axisBlock(((RotatedPillarBlock) ModBlocks.HOLLOW_WOOD.get()), blockTexture(ModBlocks.HOLLOW_LOG.get()), blockTexture(ModBlocks.HOLLOW_LOG.get()));
 
     }
 
@@ -31,10 +46,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock) {
-        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("tgeternal:block/" + deferredBlock.getId().getPath()));
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("cpumod:block/" + deferredBlock.getId().getPath()));
     }
 
     private void blockItem(DeferredBlock<?> deferredBlock, String appendix) {
-        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("tgeternal:block/" + deferredBlock.getId().getPath() + appendix));
+        simpleBlockItem(deferredBlock.get(), new ModelFile.UncheckedModelFile("cpumod:block/" + deferredBlock.getId().getPath() + appendix));
     }
 }

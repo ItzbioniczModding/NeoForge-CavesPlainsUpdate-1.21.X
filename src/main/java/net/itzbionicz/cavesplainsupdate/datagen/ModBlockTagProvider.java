@@ -23,10 +23,25 @@ public class ModBlockTagProvider extends BlockTagsProvider {
 
         tag(BlockTags.MINEABLE_WITH_AXE)
         .add(ModBlocks.HOLLOW_LOG.get())
-        .add(ModBlocks.HOLLOW_PLANK.get());
+        .add(ModBlocks.HOLLOW_WOOD.get())
+        .add(ModBlocks.HOLLOW_PLANK.get())
+        .add(ModBlocks.HOLLOW_STAIRS.get())
+        .add(ModBlocks.HOLLOW_SLAB.get())
+        .add(ModBlocks.HOLLOW_PRESSURE_PLATE.get())
+        .add(ModBlocks.HOLLOW_BUTTON.get())
+        .add(ModBlocks.HOLLOW_FENCE.get())
+        .add(ModBlocks.HOLLOW_FENCE_GATE.get())
+        .add(ModBlocks.HOLLOW_DOOR.get())
+        .add(ModBlocks.HOLLOW_TRAPDOOR.get());
 
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL);
                 //.add(ModBlocks.SABBOTH_DIRT.get());
+
+        tag(BlockTags.PLANKS)
+                .add(ModBlocks.HOLLOW_PLANK.get());
+
+        tag(BlockTags.FENCES).add(ModBlocks.HOLLOW_FENCE.get());
+        tag(BlockTags.FENCE_GATES).add(ModBlocks.HOLLOW_FENCE_GATE.get());
     }
 }

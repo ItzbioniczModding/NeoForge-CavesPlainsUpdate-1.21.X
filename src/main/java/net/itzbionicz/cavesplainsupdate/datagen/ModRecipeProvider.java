@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
 
+import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.conditions.IConditionBuilder;
 
 import java.util.concurrent.CompletableFuture;
@@ -25,7 +26,43 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.HOLLOW_PLANK.get(), 4)
                 .requires(ModBlocks.HOLLOW_LOG)
         .unlockedBy("has_hollow_log", has(ModBlocks.HOLLOW_LOG))
-        .save(recipeOutput);
+                .save(recipeOutput, "cpumod:hollow_planks_from_log");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.HOLLOW_PLANK.get(), 4)
+                .requires(ModBlocks.HOLLOW_WOOD)
+                .unlockedBy("has_hollow_wood", has(ModBlocks.HOLLOW_WOOD))
+                .save(recipeOutput, "cpumod:hollow_planks_from_wood");
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.HOLLOW_WOOD.get(),4)
+                .pattern("LL")
+                .pattern("LL")
+                .define('L', ModBlocks.HOLLOW_LOG.get())
+                .unlockedBy("has_hollow_log", has(ModBlocks.HOLLOW_LOG))
+                .save(recipeOutput);
+
+
+        stairBuilder(ModBlocks.HOLLOW_STAIRS.get(), Ingredient.of(ModBlocks.HOLLOW_PLANK)).group("hollow")
+                .unlockedBy("has_hollow_planks", has(ModBlocks.HOLLOW_PLANK)).save(recipeOutput);
+
+        slab(recipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.HOLLOW_SLAB.get(), ModBlocks.HOLLOW_PLANK.get());
+
+
+        buttonBuilder(ModBlocks.HOLLOW_BUTTON.get(), Ingredient.of(ModBlocks.HOLLOW_PLANK.get())).group("hollow")
+                .unlockedBy("has_hollow_planks", has(ModBlocks.HOLLOW_PLANK.get())).save(recipeOutput);
+
+        pressurePlate(recipeOutput, ModBlocks.HOLLOW_PRESSURE_PLATE.get(), ModBlocks.HOLLOW_PLANK.get());
+
+
+        fenceBuilder(ModBlocks.HOLLOW_FENCE.get(), Ingredient.of(ModBlocks.HOLLOW_PLANK.get())).group("hollow")
+                .unlockedBy("has_hollow_planks", has(ModBlocks.HOLLOW_PLANK.get())).save(recipeOutput);
+
+        fenceGateBuilder(ModBlocks.HOLLOW_FENCE_GATE.get(), Ingredient.of(ModBlocks.HOLLOW_PLANK.get())).group("hollow")
+                .unlockedBy("has_hollow_planks", has(ModBlocks.HOLLOW_PLANK.get())).save(recipeOutput);
+
+        doorBuilder(ModBlocks.HOLLOW_DOOR.get(), Ingredient.of(ModBlocks.HOLLOW_PLANK.get())).group("hollow")
+                .unlockedBy("has_hollow_planks", has(ModBlocks.HOLLOW_PLANK.get())).save(recipeOutput);
+        trapdoorBuilder(ModBlocks.HOLLOW_TRAPDOOR.get(), Ingredient.of(ModBlocks.HOLLOW_PLANK.get())).group("hollow")
+                .unlockedBy("has_hollow_planks", has(ModBlocks.HOLLOW_PLANK.get())).save(recipeOutput);
 
         //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FARVINITE_INGOT.get())
                // .pattern("NNN")

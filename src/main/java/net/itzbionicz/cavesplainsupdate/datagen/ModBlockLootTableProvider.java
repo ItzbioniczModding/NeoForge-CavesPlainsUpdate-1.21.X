@@ -18,6 +18,17 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
        dropSelf(ModBlocks.HOLLOW_PLANK.get());
        dropSelf(ModBlocks.HOLLOW_LOG.get());
+       dropSelf(ModBlocks.HOLLOW_WOOD.get());
+       dropSelf(ModBlocks.HOLLOW_STAIRS.get());
+        add(ModBlocks.HOLLOW_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.HOLLOW_SLAB.get()));
+        dropSelf(ModBlocks.HOLLOW_PRESSURE_PLATE.get());
+       dropSelf(ModBlocks.HOLLOW_BUTTON.get());
+       dropSelf(ModBlocks.HOLLOW_FENCE.get());
+       dropSelf(ModBlocks.HOLLOW_FENCE_GATE.get());
+        add(ModBlocks.HOLLOW_DOOR.get(),
+                block -> createDoorTable(ModBlocks.HOLLOW_DOOR.get()));
+       dropSelf(ModBlocks.HOLLOW_TRAPDOOR.get());
 
         //add(ModBlocks.FARVINITE_ORE.get(),
                 //block -> createOreDrop(ModBlocks.FARVINITE_ORE.get(), ModItems.FARVINITE.get()));
