@@ -30,6 +30,10 @@ public class ModBlocks {
             () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> HOLLOW_WOOD = registerBlock("hollow_wood",
             () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> STRIPPED_HOLLOW_LOG = registerBlock("stripped_hollow_log",
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+    public static final DeferredBlock<Block> STRIPPED_HOLLOW_WOOD = registerBlock("stripped_hollow_wood",
+            () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
 
 
     public static final DeferredBlock<StairBlock> HOLLOW_STAIRS = registerBlock("hollow_stairs",
