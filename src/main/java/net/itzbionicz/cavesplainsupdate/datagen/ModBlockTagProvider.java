@@ -5,6 +5,7 @@ import net.itzbionicz.cavesplainsupdate.block.ModBlocks;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.neoforge.common.data.BlockTagsProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
@@ -35,6 +36,12 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         .add(ModBlocks.HOLLOW_FENCE_GATE.get())
         .add(ModBlocks.HOLLOW_DOOR.get())
         .add(ModBlocks.HOLLOW_TRAPDOOR.get());
+
+        this.tag(BlockTags.LOGS_THAT_BURN)
+                .add(ModBlocks.HOLLOW_LOG.get())
+                .add(ModBlocks.HOLLOW_WOOD.get())
+                .add(ModBlocks.STRIPPED_HOLLOW_LOG.get())
+                .add(ModBlocks.STRIPPED_HOLLOW_WOOD.get());
 
 
         tag(BlockTags.MINEABLE_WITH_SHOVEL);

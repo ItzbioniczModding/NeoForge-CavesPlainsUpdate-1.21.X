@@ -24,6 +24,8 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.STRIPPED_HOLLOW_LOG);
                         output.accept(ModBlocks.HOLLOW_WOOD);
                         output.accept(ModBlocks.STRIPPED_HOLLOW_WOOD);
+                        output.accept(ModBlocks.HOLLOW_LEAVES);
+                        output.accept(ModBlocks.HOLLOW_SAPLING);
                         output.accept(ModBlocks.HOLLOW_PLANK);
                         output.accept(ModBlocks.HOLLOW_STAIRS);
                         output.accept(ModBlocks.HOLLOW_SLAB);

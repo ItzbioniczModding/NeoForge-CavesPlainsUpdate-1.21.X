@@ -21,6 +21,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
        dropSelf(ModBlocks.HOLLOW_WOOD.get());
        dropSelf(ModBlocks.STRIPPED_HOLLOW_LOG.get());
        dropSelf(ModBlocks.STRIPPED_HOLLOW_WOOD.get());
+       dropSelf(ModBlocks.HOLLOW_SAPLING.get());
        dropSelf(ModBlocks.HOLLOW_STAIRS.get());
         add(ModBlocks.HOLLOW_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.HOLLOW_SLAB.get()));
@@ -31,6 +32,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         add(ModBlocks.HOLLOW_DOOR.get(),
                 block -> createDoorTable(ModBlocks.HOLLOW_DOOR.get()));
        dropSelf(ModBlocks.HOLLOW_TRAPDOOR.get());
+
+       this.add(ModBlocks.HOLLOW_LEAVES.get(), block ->
+               createLeavesDrops(block, ModBlocks.HOLLOW_SAPLING.get(), NORMAL_LEAVES_SAPLING_CHANCES));
 
         //add(ModBlocks.FARVINITE_ORE.get(),
                 //block -> createOreDrop(ModBlocks.FARVINITE_ORE.get(), ModItems.FARVINITE.get()));

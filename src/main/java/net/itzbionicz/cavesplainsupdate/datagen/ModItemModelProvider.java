@@ -5,6 +5,7 @@ import net.itzbionicz.cavesplainsupdate.block.ModBlocks;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.Block;
+import net.neoforged.neoforge.client.model.generators.ItemModelBuilder;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
 import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.registries.DeferredBlock;
@@ -21,9 +22,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         buttonItem(ModBlocks.HOLLOW_BUTTON, ModBlocks.HOLLOW_PLANK);
         fenceItem(ModBlocks.HOLLOW_FENCE, ModBlocks.HOLLOW_PLANK);
         basicItem(ModBlocks.HOLLOW_DOOR.asItem());
+        saplingItem(ModBlocks.HOLLOW_SAPLING);
 
 
 
+    }
+    private ItemModelBuilder saplingItem(DeferredBlock<Block> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.parse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(CpuMod.MOD_ID,"block/" + item.getId().getPath()));
     }
     public void buttonItem(DeferredBlock<?> block, DeferredBlock<Block> baseBlock) {
         this.withExistingParent(block.getId().getPath(), mcLoc("block/button_inventory"))

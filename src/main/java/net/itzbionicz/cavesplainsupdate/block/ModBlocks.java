@@ -3,10 +3,15 @@ package net.itzbionicz.cavesplainsupdate.block;
 import net.itzbionicz.cavesplainsupdate.CpuMod;
 import net.itzbionicz.cavesplainsupdate.block.custom.ModRotatedPillarBlock;
 import net.itzbionicz.cavesplainsupdate.item.ModItems;
+import net.itzbionicz.cavesplainsupdate.worldgen.tree.ModTreeGrowers;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Direction;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.WoodType;
 import net.neoforged.bus.api.IEventBus;
@@ -34,6 +39,29 @@ public class ModBlocks {
             () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
     public static final DeferredBlock<Block> STRIPPED_HOLLOW_WOOD = registerBlock("stripped_hollow_wood",
             () -> new ModRotatedPillarBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LOG)));
+
+
+    public static final DeferredBlock<Block> HOLLOW_LEAVES = registerBlock("hollow_leaves",
+            () -> new LeavesBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_LEAVES)) {
+                @Override
+                public boolean isFlammable(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return true;
+                }
+
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 40;
+                }
+            });
+
+    public static final DeferredBlock<Block> HOLLOW_SAPLING = registerBlock("hollow_sapling",
+            () -> new SaplingBlock(ModTreeGrowers.HOLLOW, BlockBehaviour.Properties.ofFullCopy(Blocks.OAK_SAPLING)));
+
 
 
     public static final DeferredBlock<StairBlock> HOLLOW_STAIRS = registerBlock("hollow_stairs",

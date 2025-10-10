@@ -1,11 +1,13 @@
-// 1.21	2025-10-09T16:49:33.6710619	Block States: cpumod
+// 1.21	2025-10-09T20:48:26.1800234	Block States: cpumod
 2cf0367ab765b5c49d5ed494bc4d8f3f82a416af assets/cpumod/blockstates/hollow_button.json
 ba97f36fcf52282ee03e6491c573470e838b8183 assets/cpumod/blockstates/hollow_door.json
 c0239723118f1b1b3f31ddcdbdca635f7631d66e assets/cpumod/blockstates/hollow_fence.json
 eabaa074f102c7a5e6638c5f4590432b9418a6a3 assets/cpumod/blockstates/hollow_fence_gate.json
+ef2cd1f069146ab38758c613025b616f6daa87e1 assets/cpumod/blockstates/hollow_leaves.json
 42b8090f13287d9d66b307048ccec76346dc939f assets/cpumod/blockstates/hollow_log.json
 6cdd9fb4a0fa50c8dc122d6b5556be277395201b assets/cpumod/blockstates/hollow_plank.json
 c01cfa2b1dce020335006476aab7eef565ae54ff assets/cpumod/blockstates/hollow_pressure_plate.json
+972cd8c3017b2a6e5e8c68427587338c964b3e55 assets/cpumod/blockstates/hollow_sapling.json
 ad50eaf7f3a41afde3fa5ca6ddc5fe47469bae90 assets/cpumod/blockstates/hollow_slab.json
 48fcd6ec02d242318f11830828cc0417f1f3ece9 assets/cpumod/blockstates/hollow_stairs.json
 0e1877f158b7f9f52e89dbdc629e351029c8eee5 assets/cpumod/blockstates/hollow_trapdoor.json
@@ -28,11 +30,13 @@ fbfaf11d294593f47dc9838e6a8ba088e433eea0 assets/cpumod/models/block/hollow_fence
 8df43426a8bca45fa3af1a435393a8939dcb3f8d assets/cpumod/models/block/hollow_fence_gate_wall_open.json
 d69b13914a56568ff8b11290a28905c795a848ca assets/cpumod/models/block/hollow_fence_post.json
 bb1691f7237fca13a53900d56e1e7ec607d4f485 assets/cpumod/models/block/hollow_fence_side.json
+3972006c875c29f1db7443c2ab9053c18be272ce assets/cpumod/models/block/hollow_leaves.json
 05533293657aa57486c6368bf0f75d820bacab49 assets/cpumod/models/block/hollow_log.json
 cedc6eada2da7f3f7fbc6302b6c1eaa690de2bd9 assets/cpumod/models/block/hollow_log_horizontal.json
 18b1efe11d2d8f5be4be4eed5edbaeb3b95d5979 assets/cpumod/models/block/hollow_plank.json
 b91864b787c5414313ad807ca58c8f66d380776a assets/cpumod/models/block/hollow_pressure_plate.json
 7342d1ba07a00662eaf6bb64e8c8364148e163a1 assets/cpumod/models/block/hollow_pressure_plate_down.json
+9fbdef008931390650dec8429260eb794233a0c2 assets/cpumod/models/block/hollow_sapling.json
 20887239c045b5dc7b0b9376fb53ab7d68de3fbd assets/cpumod/models/block/hollow_slab.json
 f046cd8be299020c84b73bcf4e8059ed28c0716d assets/cpumod/models/block/hollow_slab_top.json
 2f5d09306d2ba24ea02822dbec354589e1f7ea4f assets/cpumod/models/block/hollow_stairs.json
@@ -48,6 +52,7 @@ adf2675cbe46f8c2d5aa4aa7b7c27aad27b149b4 assets/cpumod/models/block/stripped_hol
 f7c6f2200b35c3aeec9a299177d573ab4a1f9f67 assets/cpumod/models/block/stripped_hollow_wood.json
 18907b145f58fad3e6c7d52ccbd01f891bbf33dc assets/cpumod/models/block/stripped_hollow_wood_horizontal.json
 6f17c57016e40e910100682685eb1c004a2a58e8 assets/cpumod/models/item/hollow_fence_gate.json
+ef07d09692bd7fadbbc6a9bc918787065b3eecc4 assets/cpumod/models/item/hollow_leaves.json
 1c2c6cbd8bd875a353c6d35a0204b1a759b48f2c assets/cpumod/models/item/hollow_log.json
 e08825d0fa2bac9027e15dd125f77453efce53d8 assets/cpumod/models/item/hollow_plank.json
 8b2bee530ad344669578eee014dd169b04d445d1 assets/cpumod/models/item/hollow_pressure_plate.json

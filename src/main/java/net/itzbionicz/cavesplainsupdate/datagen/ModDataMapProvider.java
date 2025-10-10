@@ -16,6 +16,7 @@ public class ModDataMapProvider extends DataMapProvider {
     @Override
     protected void gather() {
         this.builder(NeoForgeDataMaps.FURNACE_FUELS);
+
                 //.add(ModItems.FROSTFIRE_ICE.getId(), new FurnaceFuel(2400), false);
     }
 }
