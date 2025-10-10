@@ -1,0 +1,4 @@
+// 1.21	2025-10-09T22:53:17.5884998	Registries
+090ceffab0aa3e6b799001f15ccde0e10b08ff7c data/cpumod/neoforge/biome_modifier/add_tree_hollow.json
+e8fa06a1761b89661324fe7d757e0f13d2616a98 data/cpumod/worldgen/configured_feature/hollow.json
+5f5aeb8187847e62115efb5f3897e208df43111e data/cpumod/worldgen/placed_feature/hollow_placed.json
