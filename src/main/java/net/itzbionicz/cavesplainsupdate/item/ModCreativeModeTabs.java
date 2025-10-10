@@ -17,7 +17,7 @@ public class ModCreativeModeTabs {
 
     public static final Supplier<CreativeModeTab> CPU_TAB = CREATIVE_MODE_TAB.register("cpu_tab",
             () -> CreativeModeTab.builder()
-                    .icon(() -> new ItemStack(ModBlocks.HOLLOW_LOG.get()))
+                    .icon(() -> new ItemStack(ModBlocks.HOLLOW_SAPLING.get()))
                     .title(Component.translatable("creativetab.cpumod.cputab"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModBlocks.HOLLOW_LOG);

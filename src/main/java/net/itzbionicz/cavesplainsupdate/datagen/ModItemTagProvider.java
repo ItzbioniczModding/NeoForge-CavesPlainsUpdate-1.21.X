@@ -30,6 +30,9 @@ public class ModItemTagProvider extends ItemTagsProvider {
         this.tag(ItemTags.PLANKS)
                 .add(ModBlocks.HOLLOW_PLANK.asItem());
 
+        this.tag(ItemTags.WOODEN_SLABS)
+                .add(ModBlocks.HOLLOW_SLAB.asItem());
+
 
 
     }

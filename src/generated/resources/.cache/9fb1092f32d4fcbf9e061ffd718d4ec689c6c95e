@@ -1,8 +1,10 @@
-// 1.21	2025-10-09T16:49:33.6730972	Recipes
+// 1.21	2025-10-09T23:24:43.6860471	Recipes
 114f65d3ea52a77c7df820da630adc3fdcc9c0d7 data/cpumod/advancement/recipes/building_blocks/hollow_slab.json
 53842217046f6820e4e8bcf05c5696fdef1e95b7 data/cpumod/advancement/recipes/building_blocks/hollow_stairs.json
 8bf6b3a62a155b9df201889bfd899c74ddb04eb3 data/cpumod/advancement/recipes/decorations/hollow_fence.json
 b7087c7dbcea357e45bce07eb8f1095efad700c2 data/cpumod/advancement/recipes/misc/hollow_planks_from_log.json
+e468759b25e1dbfdea71149d6ad9049f1218f10a data/cpumod/advancement/recipes/misc/hollow_planks_from_stripped_log.json
+e9c34ead7480dc1082f1e2f1b661074874e560ef data/cpumod/advancement/recipes/misc/hollow_planks_from_stripped_wood.json
 b4b7dc9ffb7517065d5c791deaeae595e07ef583 data/cpumod/advancement/recipes/misc/hollow_planks_from_wood.json
 45743e89b18601482514202649598c804128dd15 data/cpumod/advancement/recipes/misc/hollow_wood.json
 006e8bd7bf1659871b471e0892de66a1d16ecebe data/cpumod/advancement/recipes/misc/stripped_hollow_wood.json
@@ -16,6 +18,8 @@ bb6cf4aced8bb2bfda79c98562bff5aad558537b data/cpumod/recipe/hollow_button.json
 8fc763960a1dbe6ab3f1900bf6d7b535ce0c275e data/cpumod/recipe/hollow_fence.json
 d057877eb3d1dc9d3c5c0d1d877894593e51ae00 data/cpumod/recipe/hollow_fence_gate.json
 47fc7dc605719cc86d5b5c5bfbf5bda3e8ce7da8 data/cpumod/recipe/hollow_planks_from_log.json
+9cc104613fe6f870c4b94f126ce828aff7927269 data/cpumod/recipe/hollow_planks_from_stripped_log.json
+5e5ce742f5944c95c7b4d177233ca6be36e32c3f data/cpumod/recipe/hollow_planks_from_stripped_wood.json
 0cdd603f0a42f463b7882d959d037d62bb97b499 data/cpumod/recipe/hollow_planks_from_wood.json
 a95dbe14017ad8efec15b23b8873d4c0a56c24fb data/cpumod/recipe/hollow_pressure_plate.json
 99ea71c2b1511819560de25e0e69b8f42e74d1db data/cpumod/recipe/hollow_slab.json

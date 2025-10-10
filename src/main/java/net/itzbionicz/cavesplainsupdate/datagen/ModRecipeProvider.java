@@ -33,6 +33,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy("has_hollow_wood", has(ModBlocks.HOLLOW_WOOD))
                 .save(recipeOutput, "cpumod:hollow_planks_from_wood");
 
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.HOLLOW_PLANK.get(), 4)
+                .requires(ModBlocks.STRIPPED_HOLLOW_LOG)
+                .unlockedBy("has_stripped_hollow_log", has(ModBlocks.STRIPPED_HOLLOW_LOG))
+                .save(recipeOutput, "cpumod:hollow_planks_from_stripped_log");
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.HOLLOW_PLANK.get(), 4)
+                .requires(ModBlocks.STRIPPED_HOLLOW_WOOD)
+                .unlockedBy("has_stripped_hollow_wood", has(ModBlocks.STRIPPED_HOLLOW_WOOD))
+                .save(recipeOutput, "cpumod:hollow_planks_from_stripped_wood");
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.HOLLOW_WOOD.get(),4)
                 .pattern("LL")
                 .pattern("LL")
